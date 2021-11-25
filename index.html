@@ -1,0 +1,394 @@
+<html>
+    <head>
+        <title>Challenge Day4</title>
+
+        <link href="/day4/css/all.css" rel="stylesheet">
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            div#container {
+                width: 1250px;
+                height: 3000px;
+                /* background-color: grey; */
+                margin: 0 auto;
+            }
+
+            div#title {
+                width: inherit;
+                height: 140px;
+                /* background-color: red; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+               
+            }
+
+            ul#menu {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                margin-right: 200px;
+            }
+
+            ul#menu li {
+                margin: 0 20px;
+            }
+
+            h1#logo {
+                margin: 0 100px;
+            }
+
+            .fab {
+                color: blue;
+                margin-right: 10px;
+            }
+
+            div#banner {
+                width: inherit;
+                height: 650px;
+                /* background-color: yellow; */
+                display: flex;
+
+            }
+
+            div#virtual {
+                width: 600px;
+                height: inherit;
+                /* background-color: blue; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 30px;
+                box-sizing: border-box;
+            }
+
+            div#pic1 {
+                width: 600px;
+                height: inherit;
+                /* background-color: green; */
+                background-image: url("images/illustration.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-left: 20px;
+
+            }
+
+            button#consult {
+                width: 200px;
+                height: 50px;
+                margin-top: 30px;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+
+            div#service {
+                width: inherit;
+                height: 200px;
+                /* background-color: red; */
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items: center;
+            }
+
+            div#line1 {
+                width: 100px;
+                height: 3px;
+                background-color: black;
+                margin-top: -80px;
+            }
+
+            div#service p {
+                margin-top: -60px;
+            }
+
+            div.icon {
+                width: inherit;
+                height: 380px;
+                /* background-color: pink; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            div.box {
+                width: 300px;
+                height: 270px;
+                background-color: white;
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5) ;
+                border-radius: 20px;
+                background-image: url("images/Frame-1.png");
+                background-size: 40%;
+                background-repeat: no-repeat;
+                background-position: 20px 20px;
+                
+            }
+
+            div.box h2 {
+                padding-left: 50px;
+                margin-top: 30px;
+            }
+
+            div.box p {
+                padding-left: 50px;
+                margin-top: 30px;
+            }
+
+            div.box h2 {
+                padding-top: 90px;
+            }
+
+            div#banner2 {
+                width: inherit;
+                height: 400px;
+                /* background-color: yellow; */
+                display: flex;
+            }
+
+            div#pic2 {
+                width: 600px;
+                height: inherit;
+                /* background-color: green; */
+                background-image: url("images/section-1.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                margin-left: 50px; 
+            }
+
+            div#leading {
+                width: 400px;
+                height: inherit;
+                /* background-color: blue; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 30px;
+                box-sizing: border-box;
+            }
+
+            div#leading h2, #leading p {
+                margin: 30px 0;
+            }
+
+            div#line2 {
+                width: 100px;
+                height: 3px;
+                background-color: black;
+            }
+
+            div#banner3 {
+                width: inherit;
+                height: 400px;
+                /* background-color: red; */
+                display: flex;
+
+            }
+
+            div#download {
+                width: 400px;
+                height: inherit;
+                /* background-color: blue; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 30px;
+                box-sizing: border-box;
+                margin-left: 200px;
+            }
+
+            div#pic3 {
+                width: 600px;
+                height: inherit;
+                /* background-color: green; */
+                background-image: url("images/section-2.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                margin-left: 20px;
+                background-position: 30px 30px;
+            }
+
+            div#line3 {
+                width: 100px;
+                height: 3px;
+                background-color: black;
+            }
+
+            div#download h2, #download p {
+                margin: 30px 0;
+            }
+
+            div#end {
+                width: inherit;
+                height: 400px;
+                background-color: rgb(27, 115, 150);
+                border-radius: 30px;
+            }
+
+            div#customer {
+                width: inherit;
+                height: 100px;
+                /* background-color: red; */
+                padding-top: 30px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                color: white;
+            }
+            
+            div#line4 {
+                width: 100px;
+                height: 3px;
+                background-color: black;
+                margin-top: 30px;
+            }
+
+            div#end2 {
+                width: inherit;
+                height: 300px;
+                /* background-color: green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            div#pic4 {
+                width: 600px;
+                height: inherit;
+                /* background-color: blue; */
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 30px;
+                box-sizing: border-box;
+                color: white;
+            }
+
+            div#comment {
+                width: 600px;
+                height: inherit;
+                /* background-color: yellow; */
+                color: white;
+            }
+
+            div#comment p {
+                margin: 20px 50px;
+                font-size: 20px;
+                padding-top: 80px;
+            }
+
+            div#name {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1 id="logo"><i class="fab fa-twitter"></i>Trafalgar</h1>
+                <ul id="menu">
+                    <li>Home</li>
+                    <li>Find a doctor</li>
+                    <li>Apps</li>
+                    <li>Testimonials</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+
+            <div id="banner">
+                <div id="virtual">
+                    <h1>Virtual healthcare for </h1>
+                    <h1>you</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corporis odit facilis ratione, reprehenderit ipsam possimus autem doloribus dolorum! Accusantium provident corrupti voluptatibus itaque rem expedita doloribus, deleniti placeat porro!</p>
+                    <button id="consult"
+                    type="button" name="Consult today">Consult now</style></button>
+                </div>
+                <div id="pic1"></div>
+            </div>
+
+            <div id="service">
+                <h1>Our Services</h1>
+                <div id="line1"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem accusantium quam fugiat voluptatum libero praesentium odio sit dolor optio.</p>
+            </div>
+
+            <div class="icon">
+                <div class="box">
+                   <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+                <div class="box">
+                    <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+                <div class="box">
+                    <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+                <div class="box">
+                    <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+                <div class="box">
+                    <h2>Search Doctor</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                </div>
+            </div>
+
+            <div id="banner2">
+                <div id="pic2"></div>
+                <div id="leading">
+                    <h2>Leading Healthcare Provides</h2>
+                    <div id="line2"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, eius. Quis consectetur odit iste numquam necessitatibus qui labore atque possimus, sunt quia magni, voluptas assumenda alias itaque, sapiente corrupti. Cupiditate?</p>
+                </div>
+            </div>
+
+            <div id="banner3">
+                <div id="download">
+                    <h2>Download our Mobile App</h2>
+                    <div id="line3"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae cupiditate veritatis quo repudiandae magnam enim optio laudantium ipsam autem in, voluptate cumque odio facere ratione qui nam voluptas ut.</p>
+                </div>
+                <div id="pic3"></div>
+            </div>
+
+            <div id="end">
+                <div id="customer">
+                    <h1>What our customer are saying</h1>
+                    <div id="line4"></div>
+                </div>
+                <div id="end2">
+                    <div id="pic4">
+                        <img src="/day4/images/user.png" alt="">
+                        <div id="name">
+                            <h2>Edward Newgate</h2>
+                            <p>Founder divie</p>
+                        </div>
+                    </div>
+                    <div id="comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, neque iste. Quae ratione nulla libero, blanditiis, quam maxime soluta incidunt repellat quas facilis debitis rem illo temporibus quasi maiores tenetur!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
